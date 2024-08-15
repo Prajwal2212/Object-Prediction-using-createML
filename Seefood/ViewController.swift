@@ -20,7 +20,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         super.viewDidLoad()
         
         imagePicker.delegate = self
-        imagePicker.sourceType = .photoLibrary
+        imagePicker.sourceType = .camera
         imagePicker.allowsEditing = false
     }
     
@@ -61,18 +61,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             
             if let firstResult = results.first
             {
-                if firstResult.identifier.contains("hotdog")
-                {
-                    self.navigationItem.title = "HotDog!"
-                }
-                else
-                {
-                    self.navigationItem.title = "Not HotDog!"
-                }
+                self.navigationItem.title = firstResult.identifier
             }
-//            {
-//                self.navigationItem.title = firstResult.identifier
-//            }
         }
         
         let handler = VNImageRequestHandler(ciImage: image)
