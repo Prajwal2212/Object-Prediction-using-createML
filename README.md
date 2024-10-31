@@ -2,6 +2,13 @@
 ## 1. Goal
 The goal of this project is to build a machine learning (ML) app using CreateML in Swift that predicts the object captured by the device’s camera. The app leverages a custom-trained ML model to recognize and classify objects in real time through the camera feed, providing users with instant predictions based on what the model has learned.
 
+## Installation
+Clone the repository using git:
+```bash
+git clone https://github.com/Prajwal2212/Object-Prediction-using-createML.git
+cd Object-Prediction-using-createML
+```
+
 ## 2. Process
 ### 2.1. Tools and Frameworks
 #### CreateML: Apple's tool used to create and train the custom ML model for object recognition.
